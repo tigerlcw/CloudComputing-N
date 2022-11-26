@@ -22,11 +22,11 @@ body {
   li a {
     display: block;
     color: rgb(0, 0, 0);
-    padding: 28px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     text-align: center;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
   }
   
   li a.active {
@@ -62,3 +62,19 @@ li .goIntro{
     font-size: 14px;
     text-decoration: none;
   }
+
+/* Text */
+.lineColor {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+
+.nomalText {
+    font-size: 18px;
+}
+
+.subTitle {
+    font-size: 24px;
+    font-weight: bold;
+}

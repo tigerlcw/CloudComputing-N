@@ -1,0 +1,17 @@
+.mainImg {
+    width: 650px;   
+    height: 588px;
+    margin-left: 65px;
+}
+
+.logoImag {
+    width: 200px;
+    height: 100px;
+    margin-left: 25px;
+}
+
+.tableBorder {
+    padding: 15px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
