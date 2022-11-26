@@ -3,3 +3,62 @@
 *{
     font-family: 'Montserrat';
 }
+
+body {
+    margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12.5%;
+    background-color: #e7e7e7;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 28px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  li a.active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+/* 오른쪽 데이터 출력 영역 */
+.dataArea{
+    margin-left:12.5%;
+    padding:1px 16px;
+    height: 1080px;
+}
+
+li .goIntro{
+    margin-top: 150px;
+}
+
+
+/* copyright */
+.footerDiv {
+    text-align: center;
+    margin-top: 95%;
+  }
+
+.copyRight {
+    color: rgb(30, 0, 255);
+    font-size: 14px;
+    text-decoration: none;
+  }
