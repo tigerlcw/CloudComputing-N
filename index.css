@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+*{
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: black;
+}
+
+/* 텍스트 애니메이션 설정 부분 */
+#slider,  #slider .slide{
+    width: 550px;
+    height: 500px;
+  }
+  #slider {
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  #slider .container {
+    position: relative;
+    margin-top: 100px;
+    bottom: 0;
+    right: 0;
+    animation: slide-animation 12s infinite;
+  }
+  #slider .slide {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+  
+  /* 애니메이션 설정 부분 */
+  @keyframes slide-animation {
+    0% { 
+      opacity: 0;
+      bottom: 0;
+    }
+    11% {
+      opacity: 1;
+      bottom: 0; 
+    }
+    22% { bottom: 100%; }
+    33% { bottom: 100%; }
+    44% { bottom: 200%; }
+    55% { bottom: 200%; }
+    66% { bottom: 300%; }
+    77% { bottom: 300%; }
+    88% {
+      opacity: 1;
+      bottom: 400%; 
+    }
+    100% {
+      opacity: 0;
+      bottom: 400%;
+    }
+  }
+
+  .linkTo {
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+  }
+
+  .linkTo:hover {
+    color: rgb(30, 150, 255);
+    text-decoration: none;
+    font-size: 48px;
+  }
+
+  .intoBtn {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .copyRight {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 50px;
+  }
