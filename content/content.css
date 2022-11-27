@@ -125,3 +125,25 @@ li .goIntro{
     font-weight: bold;
     text-decoration: none;
   }
+
+/* cloud button */
+.btnCSet {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  
+  .btnCSet:hover {
+    background-color: rgb(0, 17, 255);
+    border-color: rgb(0, 17, 255);
+  }

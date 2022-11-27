@@ -165,3 +165,142 @@
     transform: translate(-50%, -50%);
     transition: all .5s;
   }
+
+  /* 클라우드 운영 타입 */
+  /*modal4*/
+  .background4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    
+    /* 숨기기 */
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .show4 {
+    opacity: 1;
+    z-index: 1000;
+    transition: all .5s;
+  }
+  
+  .window4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    
+    width: 550px;
+    height: 650px;
+
+    transform: translate(-50%, -40%);
+  }
+  
+  .show4 .popup4 {
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+  }
+
+  /*modal5*/
+  .background5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    
+    /* 숨기기 */
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .show5 {
+    opacity: 1;
+    z-index: 1000;
+    transition: all .5s;
+  }
+  
+  .window5 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    
+    width: 550px;
+    height: 650px;
+
+    transform: translate(-50%, -40%);
+  }
+  
+  .show5 .popup5 {
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+  }
+
+  /*modal6*/
+  .background6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    
+    /* 숨기기 */
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .show6 {
+    opacity: 1;
+    z-index: 1000;
+    transition: all .5s;
+  }
+  
+  .window6 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    
+    width: 550px;
+    height: 650px;
+
+    transform: translate(-50%, -40%);
+  }
+  
+  .show6 .popup6 {
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+  }
