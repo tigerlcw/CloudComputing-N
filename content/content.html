@@ -186,7 +186,7 @@
         </section>
     </div>
 
-    <div id="tech" style="margin-left:12.5%;padding:1px 16px;height:2000px;">
+    <div id="tech" style="margin-left:12.5%;padding:1px 16px;height:8350px;">
         <h1>클라우드 기술</h1>
         <hr>
 
@@ -328,7 +328,7 @@
 <section class="sectionArea">
 <details class="skillDText">
     <summary>가상 서버</summary>
-                <p class="normalText">
+                <p class="skillNormalText">
                     클라우드 서비스에서 가장 기본적인 기능이 가상 서버(가상 머신)입니다.
                     가상 서버는 대표적으로 하나의 물리적 서버를 논리적으로 나누어 CPU, 
                     메모리 등의 자원을 할당할 수 있습니다. 
@@ -338,64 +338,81 @@
 
 <details class="skillDText">
     <summary>가상화 기술</summary>
-                <p class="normalText">
-                    1. AWS 실습 - Lambda
+                <p class="skillNormalText">
+                    가상화를 다른말로 물리적인 하드웨어 장치를 논리적인 객체로 추상화하는 것을 의미합니다. 마치 하나의 장치를 여러개로 나눠 동작시키거나, 반대로 여러개의 장치를 묶어 마치 하나의 장치인 것 처럼 사용자에게 공유자원으로 제공할 수 있기 때문에 클라우드 컴퓨팅 구현을 위한 핵심적인 기술입니다. 
+                    가상화는 대표적으로 세가지가 있는데 호스트 가상화, 하이퍼바이저 가상화, 컨테이너 가상화가 있습니다. 
+                    
+                    <br><br>
+                    <b style="color: blueviolet; font-size: 20px;">호스트 가상화</b>
+                    
                     <br>
-                    2. Azure - Introduction
+                    하드웨어 위에 기본이 되는 호스트 운영체제를 설치하고, 호스트 운영체제에 가상화 SW를 설치합니다. 호스트 가상화는 가상화 SW 위에 게스트 운영체제를 작동시키는 가상화를 뜻합니다. 하지만 호스트 운영체제 위에 게스트 운영체제를 작동시키기 때문에 필요 이상으로 CPU나 메모리 사용이 증가하는 오버헤드가 발생합니다.
+
+                    <br><br>
+                    <b style="color: blueviolet; font-size: 20px;">하이퍼바이저 가상화</b>
                     <br>
-                    3. Azure - Getting Started
+                    하드웨어에 가상화를 전담하는 SW인 하이퍼바이저를 배치해 HW와 가상 환경을 제어합니다. 호스트가 없는 HW를 직접 제어하기 때문에 컴퓨팅 자원을 효율적으로 사용가능 하지만 환경별로 다른 운영체제가 작동하기 때문에 가상환경을 사용하기 위한 오버헤드가 발생합니다. 
+                    
+                     
+                    <br><br>
+                    <b style="color: blueviolet; font-size: 20px;">컨테이너 가상화</b>
+                    <br>
+                    운영체제에 논리적인 영역(컨테이너)을 만들고, 애플리케이션을 작동하는 데 필요한 라이브러리와 애플리케이션 등을 컨테이너 안에 넣어, 마치 개별 서버 처럼 사용할 수 있게 한 것이 컨테이너 가상화입니다. 
                 </p>
-
 </details>
-    
-<details class="skillDText">
-    <summary>분산 처리 기술</summary>
-                <p class="normalText">
-                    1. AWS 실습 - Lambda
-                    <br>
-                    2. Azure - Introduction
-                    <br>
-                    3. Azure - Getting Started
-                </p>
-
-</details>
-
 </section>
 
 <section class="sectionArea">
 
     <details class="skillDText">
-        <summary>서버리스</summary>
-                    <p class="normalText">
-                        1. AWS 실습 - Lambda
-                        <br>
-                        2. Azure - Introduction
-                        <br>
-                        3. Azure - Getting Started
+        <summary>분산 처리 기술</summary>
+                    <p class="skillNormalText">
+                        이제는 분산처리 기술과 클라우드 서비스를 이용해서 여러 개 서버에 나누어 
+                        병렬 처리 할 수 있게 되었습니다. 예를 들면 대량의 데이터를 분산 처리하는 
+                        방법으로 여러개의 서버를 결합하여 하나의 컴퓨터 처럼 보이게 만드는 기술인 
+                        <span class="lineColor">'클러스터링'</span>이 있습니다. 대표적인 기술로는 아파치 하둡, 스파크 등이 있습니다. 
                     </p>
     
     </details>
 
     <details class="skillDText">
+        <summary>서버리스</summary>
+                    <p class="skillNormalText">
+                        클라우드 컴퓨팅 실행 모델의 하나입니다. AWS와 같은 클라우드 제공자가 
+                        동적으로 가상 머신 자원의 할당을 관리해 미리 설정된 서버리스 코드를 실행시키는 기술을 의미합니다. 
+                        컴퓨팅 자원과 관계없이 애플리케이션 개발이 가능한 이벤트 기반 클라우드 컴퓨팅 기술로 
+                        언제 어디서나 네트워크에 접근이 가능하며, 데이터 저장 및 다양한 기능을 제공해 시간과 비용을 
+                        효율적으로 관리할 수 있습니다. 서버리스는 PaaS와 SaaS의 중간형태인데 AWS에서 가장먼저 선보였습니다. 
+                    </p>
+    
+    </details>
+</section>
+
+<section class="sectionArea">
+
+    <details class="skillDText">
         <summary>로드 밸런싱</summary>
-                    <p class="normalText">
-                        1. AWS 실습 - Lambda
-                        <br>
-                        2. Azure - Introduction
-                        <br>
-                        3. Azure - Getting Started
+                    <p class="skillNormalText">
+                        컴퓨터 자원 분산 기술의 일종으로 둘 혹은 셋 이상의 중앙 처리장치 혹은 저장 장치와 같은 컴퓨터 자원들의 
+                        작업을 나누는 것을 의미합니다. 예를들면 홈쇼핑에서 갑자기 고객 요청으로 주문이 폭주했을때 여러 대의 
+                        분산 처리하여 서버의 부하량, 속도 저하를 방지해 분산처리하면 중단 없이 서비스를 운영할 수 있습니다. 
                     </p>
     
     </details>
 
     <details class="skillDText">
         <summary>스케일 업, 스케일 아웃</summary>
-                    <p class="normalText">
-                        1. AWS 실습 - Lambda
+                    <p class="skillNormalText">
+                        <b style="color: blueviolet; font-size: 20px;">스케일업(수직 스케일)</b>
                         <br>
-                        2. Azure - Introduction
+                        서버 자체의 성능을 업그레이드하여 처리능력을 향상시키는 방법입니다. 
+                        <br><br>
+
+                        <b style="color: blueviolet; font-size: 20px;">스케일 아웃</b>
                         <br>
-                        3. Azure - Getting Started
+                        서버를 늘려 시스템을 확장하는 방법입니다. 
+                        여기서도 서버가 늘어나기 때문에 로드 밸런싱 기술이 필수입니다. 
+                        데이터 변화가 적은 서비스에 적합합니다. 
                     </p>
     
     </details>
@@ -405,24 +422,20 @@
 
     <details class="skillDText">
         <summary>오토스케일</summary>
-                    <p class="normalText">
-                        1. AWS 실습 - Lambda
-                        <br>
-                        2. Azure - Introduction
-                        <br>
-                        3. Azure - Getting Started
+                    <p class="skillNormalText">
+                        서비스가 집중 되었을 때 서버 CPU 및 메모리 사용량이 일정 사용량을 초과하면 자동으로 서버 대수를 증가시키고, 
+                        일정량 보다 낮아지면 서버의 대수를 줄여서 불필요한 비용을 절약할 수 있게 하는 기술을 말합니다. 
                     </p>
     
     </details>
 
     <details class="skillDText">
         <summary>데브 옵스(DevOps)</summary>
-                    <p class="normalText">
-                        1. AWS 실습 - Lambda
-                        <br>
-                        2. Azure - Introduction
-                        <br>
-                        3. Azure - Getting Started
+                    <p class="skillNormalText">
+                        개발팀(Development)이 하는일(웹 사이트 개발, 앱 개발, 알고리즘 개발), 
+                        운영팀(Operation)이 하는일(아이템을 고객들에게 전달) 따라서 
+                        <span class="lineColor">데브 옵스는 두팀간의 소통이 원활히 이루어질 수 있도록 하는 것으로 의미합니다.</span>
+                        특히, 클라우드 서비스가 확장되면서 개발과 운영을 통합하는 데브옵스 개념이 점차 증가하고 있습니다. 
                     </p>
     
     </details>
@@ -430,10 +443,9 @@
 
 
 
-
     </div>
 
-    <div id="trends" style="margin-left:12.5%;padding:1px 16px;height:2000px;">
+    <div id="trends" style="margin-left:12.5%;padding:1px 16px;">
         <h1>클라우드 동향</h1>
         <hr>
         <p class="normalText">가트너의 2023년 전 세계 퍼블릭 클라우드 시장 규모 전망을 참고하였다.</p>
