@@ -79,6 +79,19 @@ li .goIntro{
     font-weight: bold;
 }
 
+/* modal용 text */
+.nomalMText {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.subMTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
 
 /* button */
 .btnSet {
