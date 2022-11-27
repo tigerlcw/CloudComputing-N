@@ -10,6 +10,13 @@
     margin-left: 25px;
 }
 
+/* modal Images */
+.logoMImag {
+    width: 50%;
+    transform: translate(50%);
+}
+
+
 .tableBorder {
     padding: 15px;
     border: 2px solid rgb(0, 0, 0);
